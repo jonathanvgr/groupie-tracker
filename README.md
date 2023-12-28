@@ -70,4 +70,4 @@ then you should do in HTML
 <div>{{.Data.Name}}</div>
 ```
 
-It then displays as whatever you pout in Name field
+It then displays as whatever you put in Name field
