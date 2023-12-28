@@ -13,6 +13,6 @@ func Index(w http.ResponseWriter, r *http.Request, t *template.Template) {
 	getDataFrom(constants.API_Artist_URL, &artists)
 	
 	// Send data to the web page
-	pageData := constants.PageData{Data: artists}
+	pageData := PageData{Data: artists}
 	t.Execute(w, pageData)
 }

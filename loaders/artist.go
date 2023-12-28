@@ -20,6 +20,6 @@ func Artist(w http.ResponseWriter, r *http.Request, id string, t *template.Templ
 	getDataFrom(fmt.Sprintf("%s/%s", constants.API_Relation_URL, id), &fullData.Relations)
 
 	// Send data to the web page
-	pageData := constants.PageData{Data: fullData}
+	pageData := PageData{Data: fullData}
 	t.Execute(w, pageData)
 }

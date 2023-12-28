@@ -29,8 +29,3 @@ type Relations struct {
 	Id uint
 	DatesLocations map[string][]string
 }
-
-// Format des donnees a envoyer a une page web
-type PageData struct {
-	Data any
-}
